@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cellular automata</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <style>
+        #animation {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+        }
+        p {
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+
+            color: black;
+            font-family: "Arial Black";
+            font-size: 36px;
+            text-align: center;
+        }
+        button{
+            font-family: "Arial Black";
+            font-size: 18px;
+            background-color: white;
+            border-color: lightblue;
+
+            position: absolute;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, -50%);
+        }
+        button:hover {
+            background-color: midnightblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="animation"></div>
+<p>music of life<br> <span id="click">click anywhere to restart<span></span></p>
+<button onclick="location.href='index.html';">go twinkle</button>
+<script src="sketch.js"></script>
+</body>
+</html>
