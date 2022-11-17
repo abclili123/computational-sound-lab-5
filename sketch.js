@@ -3,6 +3,9 @@ let oscs;
 let globGain;
 var globalAnalyser;
 
+// https://p5js.org/examples/simulate-game-of-life.html
+// cellular automata code used from link above 
+
 let w;
 let columns;
 let rows;
