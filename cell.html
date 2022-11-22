@@ -22,18 +22,31 @@
             font-size: 36px;
             text-align: center;
         }
-        button{
+        #b1{
             font-family: "Arial Black";
             font-size: 18px;
             background-color: white;
             border-color: lightblue;
 
             position: absolute;
-            left: 50%;
+            left: 45%;
             top: 72%;
             transform: translate(-50%, -50%);
         }
-        button:hover {
+
+        #b2{
+            font-family: "Arial Black";
+            font-size: 18px;
+            background-color: white;
+            border-color: lightblue;
+
+            position: absolute;
+            left: 55%;
+            top: 72%;
+            transform: translate(-50%, -50%);
+        }
+
+        #b1:hover, #b2:hover {
             background-color: midnightblue;
             color: white;
         }
@@ -42,7 +55,8 @@
 <body>
 <div id="animation"></div>
 <p>music of life<br> <span id="click">click anywhere to restart<span></span></p>
-<button onclick="location.href='index.html';">go twinkle</button>
+<button id="b1" onclick="location.href='blog.html';">blog post</button>
+<button id="b2" onclick="location.href='index.html';">go twinkle</button>
 <script src="sketch.js"></script>
 </body>
 </html>
