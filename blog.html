@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blog</title>
+    <style>
+        p {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+
+            color: black;
+            font-family: "Arial Black";
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        #b2{
+            font-family: "Arial Black";
+            font-size: 18px;
+            background-color: white;
+            border-color: lightblue;
+
+            position: absolute;
+            left: 50%;
+            top: 63%;
+            transform: translate(-50%, -50%);
+        }
+        #b2:hover {
+            background-color: midnightblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<p>For my lab, I decided to use cellular automata for my automatic composition. I started by using p5.js for the
+    visualization. Specifically, I used <a href="https://p5js.org/examples/simulate-game-of-life.html">this code</a>, an
+    implementation
+    of Conway's Game of Life. I chose to use Conway's game of life for its emergent properties of gliders and ring like
+    structures based on simple rules. Especially for the gliders, I like to think they are creatures moving, so I
+    thought it would
+    be interesting to sonify. Originally, I programmed a function to map the x,y position of live cells in the grid to a
+    frequency. I
+    played around with different linear and sinusoidal functions, but none of these produced something appealing to the
+    ear.
+    Eventually I landed on hard coding the scales to 4 chords across 4 octaves to give the Game of Life the quality of
+    improvising over a scale as you would if you were playing music. <br><br> The code works by playing a note for the
+    length of the framerate every time a cell is born.</p>
+<button id="b2" onclick="location.href='cell.html';">music of life</button>
+</body>
+</html>
